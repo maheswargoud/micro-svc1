@@ -17,7 +17,8 @@ pipeline {
             steps {
                 sh '''
                 # apply kubectl 
-                kubectl apply -f ns.yaml deployment.yaml service.yaml ingress.yaml 
+                cd k8s/
+                kubectl apply -f namespace.yaml deployment.yaml service.yaml ingress.yaml 
                 '''
 
             }
