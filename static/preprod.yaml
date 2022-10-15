@@ -3,6 +3,7 @@
 # Declare variables to be passed into your templates.
 
 namespace: preprod
+ingressurl: preprod.apishopping.in
 replicaCount: 1
 
 image:

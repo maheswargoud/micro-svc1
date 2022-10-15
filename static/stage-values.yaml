@@ -3,6 +3,7 @@
 # Declare variables to be passed into your templates.
 
 namespace: stage
+ingressurl: stage.apishopping.in
 replicaCount: 1
 
 image:

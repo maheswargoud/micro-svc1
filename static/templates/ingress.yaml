@@ -150,7 +150,7 @@ metadata:
     alb.ingress.kubernetes.io/group.name: demo
 spec:
   rules:
-    - host: dev.apishopping.in
+    - host: {{ .Values.ingressurl }}
       http:
         paths:
           - path: /
