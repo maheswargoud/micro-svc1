@@ -17,8 +17,8 @@ pipeline {
             steps {
                 sh '''
                 # helm 
-                kubectl get nodes 
-                helm upgrade -i static-dev static
+                kubectl create ns 
+                helm upgrade -i static-dev static -n dev
                 '''
 
             }
