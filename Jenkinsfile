@@ -17,7 +17,7 @@ pipeline {
             steps {
                 sh '''
                 # helm 
-                kubectl create ns 
+                kubectl create ns dev
                 helm upgrade -i static-dev static -n dev
                 '''
 
