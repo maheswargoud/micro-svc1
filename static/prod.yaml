@@ -4,13 +4,13 @@
 
 namespace: prod
 ingressurl: prod.apishopping.in
-replicaCount: 1
+replicaCount: 5
 
 image:
   repository: 101275806917.dkr.ecr.ap-southeast-1.amazonaws.com/static-apache
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1"
+  tag: "6"
 
 imagePullSecrets: []
 nameOverride: ""
