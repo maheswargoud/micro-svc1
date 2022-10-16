@@ -17,7 +17,7 @@ pipeline {
             steps {
                 sh '''
                 # helm 
-                helm upgrade -i static-dev static -n dev
+                helm upgrade -i static-dev static -n dev --set image.tag=$BUILD_NUMBER
                 '''
 
             }
